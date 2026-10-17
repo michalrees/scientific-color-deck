@@ -1,0 +1,2142 @@
+{
+  "summary": {
+    "added": 62,
+    "colorbrewerD3": 37,
+    "matplotlib": 25,
+    "countingRule": "One named base scheme per group; no reversed or size variants."
+  },
+  "palettes": [
+    {
+      "id": "open-accent",
+      "name": "ColorBrewer · Accent",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#7FC97F",
+        "#BEAED4",
+        "#FDC086",
+        "#FFFF99",
+        "#386CB0",
+        "#F0027F",
+        "#BF5B17",
+        "#666666"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Accent.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "8个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 8
+      },
+      "sourceSha256": "1e9f52cb4e054474e874a69ab63093556360de1d9c8b1eb801fd4e3482050a42"
+    },
+    {
+      "id": "open-dark2",
+      "name": "ColorBrewer · Dark2",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#1B9E77",
+        "#D95F02",
+        "#7570B3",
+        "#E7298A",
+        "#66A61E",
+        "#E6AB02",
+        "#A6761D",
+        "#666666"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Dark2.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "8个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 8
+      },
+      "sourceSha256": "aaafcd2d320c52281d4013c0d8fe3b28d4efa916d9aa38f6508fca1599330485"
+    },
+    {
+      "id": "open-paired",
+      "name": "ColorBrewer · Paired",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#A6CEE3",
+        "#1F78B4",
+        "#B2DF8A",
+        "#33A02C",
+        "#FB9A99",
+        "#E31A1C",
+        "#FDBF6F",
+        "#FF7F00",
+        "#CAB2D6",
+        "#6A3D9A",
+        "#FFFF99",
+        "#B15928"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Paired.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "12个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 12
+      },
+      "sourceSha256": "4af3dd9cf70ed09f79d98bd9cac1c1513cdec911e9d3128e94a0a6abb585faa5"
+    },
+    {
+      "id": "open-pastel1",
+      "name": "ColorBrewer · Pastel1",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FBB4AE",
+        "#B3CDE3",
+        "#CCEBC5",
+        "#DECBE4",
+        "#FED9A6",
+        "#FFFFCC",
+        "#E5D8BD",
+        "#FDDAEC",
+        "#F2F2F2"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Pastel1.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "9个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "add3c6416cb834c42cfd19098a32d058fc983e999cf5bc86e289f7023c455423"
+    },
+    {
+      "id": "open-pastel2",
+      "name": "ColorBrewer · Pastel2",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#B3E2CD",
+        "#FDCDAC",
+        "#CBD5E8",
+        "#F4CAE4",
+        "#E6F5C9",
+        "#FFF2AE",
+        "#F1E2CC",
+        "#CCCCCC"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Pastel2.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "8个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 8
+      },
+      "sourceSha256": "f42dceafb5fa5def0ae4dcdf2ff1b4ba5052c84775f238e289c3703c4b1e1565"
+    },
+    {
+      "id": "open-set1",
+      "name": "ColorBrewer · Set1",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#E41A1C",
+        "#377EB8",
+        "#4DAF4A",
+        "#984EA3",
+        "#FF7F00",
+        "#FFFF33",
+        "#A65628",
+        "#F781BF",
+        "#999999"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Set1.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "9个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "6214d10e03f2e7e5667ff0f50b3a6c0755996f34f3f9fbbce3a2422f638642dd"
+    },
+    {
+      "id": "open-set2",
+      "name": "ColorBrewer · Set2",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#66C2A5",
+        "#FC8D62",
+        "#8DA0CB",
+        "#E78AC3",
+        "#A6D854",
+        "#FFD92F",
+        "#E5C494",
+        "#B3B3B3"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Set2.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "8个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 8
+      },
+      "sourceSha256": "ee6efe017b121c1f78232bc7cbd59ab59291d4342c3fc4e57c9559afd867470b"
+    },
+    {
+      "id": "open-set3",
+      "name": "ColorBrewer · Set3",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#8DD3C7",
+        "#FFFFB3",
+        "#BEBADA",
+        "#FB8072",
+        "#80B1D3",
+        "#FDB462",
+        "#B3DE69",
+        "#FCCDE5",
+        "#D9D9D9",
+        "#BC80BD",
+        "#CCEBC5",
+        "#FFED6F"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Set3.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "12个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 12
+      },
+      "sourceSha256": "7a57c399e254d12d0cd439261e22da2d006b9a23d1999cbf783074426b66942d"
+    },
+    {
+      "id": "open-category10",
+      "name": "D3 · category10",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "d3",
+      "colors": [
+        "#1F77B4",
+        "#FF7F0E",
+        "#2CA02C",
+        "#D62728",
+        "#9467BD",
+        "#8C564B",
+        "#E377C2",
+        "#7F7F7F",
+        "#BCBD22",
+        "#17BECF"
+      ],
+      "family": "D3",
+      "license": "ISC",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/category10.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Mike Bostock / D3; Tableau10 attribution retained upstream.",
+      "note": "10个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 10
+      },
+      "sourceSha256": "4aaa4f6590af71def70306eef8c0a64c433054d9369f50d94f08cb589cba565b"
+    },
+    {
+      "id": "open-tableau10",
+      "name": "D3 · Tableau10",
+      "type": "qualitative",
+      "collection": "Open-source",
+      "origin": "d3",
+      "colors": [
+        "#4E79A7",
+        "#F28E2C",
+        "#E15759",
+        "#76B7B2",
+        "#59A14F",
+        "#EDC949",
+        "#AF7AA1",
+        "#FF9DA7",
+        "#9C755F",
+        "#BAB0AB"
+      ],
+      "family": "D3",
+      "license": "ISC",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/categorical/Tableau10.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Mike Bostock / D3; Tableau10 attribution retained upstream.",
+      "note": "10个原始分类色，适合离散组别；不自动保证全部色对在色觉缺陷下可分辨。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 10
+      },
+      "sourceSha256": "28421b3596d670e2e7d835f176d81f23851d98c46e561fa94e35b7d473cfde1b"
+    },
+    {
+      "id": "open-blues",
+      "name": "ColorBrewer · Blues",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#F7FBFF",
+        "#DEEBF7",
+        "#C6DBEF",
+        "#9ECAE1",
+        "#6BAED6",
+        "#4292C6",
+        "#2171B5",
+        "#08519C",
+        "#08306B"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-single/Blues.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "e63b66c03cb69e5563cb7f3188250cf63742f6790fb83096eee5214eb138740b"
+    },
+    {
+      "id": "open-greens",
+      "name": "ColorBrewer · Greens",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#F7FCF5",
+        "#E5F5E0",
+        "#C7E9C0",
+        "#A1D99B",
+        "#74C476",
+        "#41AB5D",
+        "#238B45",
+        "#006D2C",
+        "#00441B"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-single/Greens.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "a75198bb6a606a2bb6cafe498104c1ab55820d4a73e2aaf12f3164b91525c7f4"
+    },
+    {
+      "id": "open-greys",
+      "name": "ColorBrewer · Greys",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFFFFF",
+        "#F0F0F0",
+        "#D9D9D9",
+        "#BDBDBD",
+        "#969696",
+        "#737373",
+        "#525252",
+        "#252525",
+        "#000000"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-single/Greys.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "32a481c7c49536e1522f3f259a65418f09589dfbbb1c6ca96976f895c895294b"
+    },
+    {
+      "id": "open-oranges",
+      "name": "ColorBrewer · Oranges",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFF5EB",
+        "#FEE6CE",
+        "#FDD0A2",
+        "#FDAE6B",
+        "#FD8D3C",
+        "#F16913",
+        "#D94801",
+        "#A63603",
+        "#7F2704"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-single/Oranges.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "75a477a5049d051c7598a67eeb5a5ff2eca45a61b481404511e558acb04c628f"
+    },
+    {
+      "id": "open-purples",
+      "name": "ColorBrewer · Purples",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FCFBFD",
+        "#EFEDF5",
+        "#DADAEB",
+        "#BCBDDC",
+        "#9E9AC8",
+        "#807DBA",
+        "#6A51A3",
+        "#54278F",
+        "#3F007D"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-single/Purples.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "a883a79f6c1d84665157d1ac70ac29cf90ae7844e7316079245f652810c813a7"
+    },
+    {
+      "id": "open-reds",
+      "name": "ColorBrewer · Reds",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFF5F0",
+        "#FEE0D2",
+        "#FCBBA1",
+        "#FC9272",
+        "#FB6A4A",
+        "#EF3B2C",
+        "#CB181D",
+        "#A50F15",
+        "#67000D"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-single/Reds.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "f32a1a8000d25cb3c3b3a87fb5a7e5e7f1281593a148155ae35138c205c7bfc3"
+    },
+    {
+      "id": "open-bugn",
+      "name": "ColorBrewer · BuGn",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#F7FCFD",
+        "#E5F5F9",
+        "#CCECE6",
+        "#99D8C9",
+        "#66C2A4",
+        "#41AE76",
+        "#238B45",
+        "#006D2C",
+        "#00441B"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/BuGn.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "2196bde7a2f35a48faa2f6015cbd6786baef1c503bf11632344d519a43f231bc"
+    },
+    {
+      "id": "open-bupu",
+      "name": "ColorBrewer · BuPu",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#F7FCFD",
+        "#E0ECF4",
+        "#BFD3E6",
+        "#9EBCDA",
+        "#8C96C6",
+        "#8C6BB1",
+        "#88419D",
+        "#810F7C",
+        "#4D004B"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/BuPu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "358ea1a2b443e45c3315aa076786b6e0d613227b98aacbb4a05c84ba26ce5073"
+    },
+    {
+      "id": "open-gnbu",
+      "name": "ColorBrewer · GnBu",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#F7FCF0",
+        "#E0F3DB",
+        "#CCEBC5",
+        "#A8DDB5",
+        "#7BCCC4",
+        "#4EB3D3",
+        "#2B8CBE",
+        "#0868AC",
+        "#084081"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/GnBu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "1ea0a50731f1ed359904737c700d363aec0fc9e1dce34f4022fa0d7861e543e4"
+    },
+    {
+      "id": "open-orrd",
+      "name": "ColorBrewer · OrRd",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFF7EC",
+        "#FEE8C8",
+        "#FDD49E",
+        "#FDBB84",
+        "#FC8D59",
+        "#EF6548",
+        "#D7301F",
+        "#B30000",
+        "#7F0000"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/OrRd.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "0910e7c4fa6de0330b301b1064ee957a18f09ddd753dc9644bd685617c865865"
+    },
+    {
+      "id": "open-pubu",
+      "name": "ColorBrewer · PuBu",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFF7FB",
+        "#ECE7F2",
+        "#D0D1E6",
+        "#A6BDDB",
+        "#74A9CF",
+        "#3690C0",
+        "#0570B0",
+        "#045A8D",
+        "#023858"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/PuBu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "e7950d24dde64ee0c68e33e6d682655d937c458ba591738d29e8bc2faa157c99"
+    },
+    {
+      "id": "open-pubugn",
+      "name": "ColorBrewer · PuBuGn",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFF7FB",
+        "#ECE2F0",
+        "#D0D1E6",
+        "#A6BDDB",
+        "#67A9CF",
+        "#3690C0",
+        "#02818A",
+        "#016C59",
+        "#014636"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/PuBuGn.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "5ed2bf477617a0faa74a234a1d7c1f9940e101b52eda9c82f58afec105e258dd"
+    },
+    {
+      "id": "open-purd",
+      "name": "ColorBrewer · PuRd",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#F7F4F9",
+        "#E7E1EF",
+        "#D4B9DA",
+        "#C994C7",
+        "#DF65B0",
+        "#E7298A",
+        "#CE1256",
+        "#980043",
+        "#67001F"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/PuRd.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "1c250795d692bd8ba9f3514ce06eb65e3db724f132a34b86f36bf0aaff4977fa"
+    },
+    {
+      "id": "open-rdpu",
+      "name": "ColorBrewer · RdPu",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFF7F3",
+        "#FDE0DD",
+        "#FCC5C0",
+        "#FA9FB5",
+        "#F768A1",
+        "#DD3497",
+        "#AE017E",
+        "#7A0177",
+        "#49006A"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/RdPu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "2bf7038497f41046dce504e725d4b1b140c13a2ed11620abd3c7aa90d151fae4"
+    },
+    {
+      "id": "open-ylgn",
+      "name": "ColorBrewer · YlGn",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFFFE5",
+        "#F7FCB9",
+        "#D9F0A3",
+        "#ADDD8E",
+        "#78C679",
+        "#41AB5D",
+        "#238443",
+        "#006837",
+        "#004529"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/YlGn.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "a4912513e39082bd58be5d5e0a751b1a6ae635f789c2c1fe168e628bde0978ed"
+    },
+    {
+      "id": "open-ylgnbu",
+      "name": "ColorBrewer · YlGnBu",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFFFD9",
+        "#EDF8B1",
+        "#C7E9B4",
+        "#7FCDBB",
+        "#41B6C4",
+        "#1D91C0",
+        "#225EA8",
+        "#253494",
+        "#081D58"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/YlGnBu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "348671228797292ee4388664e9b337339a424a54aa45e24c876c4089656055a2"
+    },
+    {
+      "id": "open-ylorbr",
+      "name": "ColorBrewer · YlOrBr",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFFFE5",
+        "#FFF7BC",
+        "#FEE391",
+        "#FEC44F",
+        "#FE9929",
+        "#EC7014",
+        "#CC4C02",
+        "#993404",
+        "#662506"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/YlOrBr.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "7c958567ba23a4f04f848a4eaf9690e7e89882952bafc04443cf013ace93a47d"
+    },
+    {
+      "id": "open-ylorrd",
+      "name": "ColorBrewer · YlOrRd",
+      "type": "sequential",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#FFFFCC",
+        "#FFEDA0",
+        "#FED976",
+        "#FEB24C",
+        "#FD8D3C",
+        "#FC4E2A",
+        "#E31A1C",
+        "#BD0026",
+        "#800026"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/sequential-multi/YlOrRd.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 9 色离散色阶；从低到高的有序数值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 9
+      },
+      "sourceSha256": "bcd2d86ba85956a90700b38d9d6f1bda90776bfef12a3d60dd76fb3e1c6c12b4"
+    },
+    {
+      "id": "open-brbg",
+      "name": "ColorBrewer · BrBG",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#543005",
+        "#8C510A",
+        "#BF812D",
+        "#DFC27D",
+        "#F6E8C3",
+        "#F5F5F5",
+        "#C7EAE5",
+        "#80CDC1",
+        "#35978F",
+        "#01665E",
+        "#003C30"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/BrBG.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "e333be0055dfd6f6fcf3aec90a4d4be86c640d4a9de2e62cd6908592bff47c57"
+    },
+    {
+      "id": "open-prgn",
+      "name": "ColorBrewer · PRGn",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#40004B",
+        "#762A83",
+        "#9970AB",
+        "#C2A5CF",
+        "#E7D4E8",
+        "#F7F7F7",
+        "#D9F0D3",
+        "#A6DBA0",
+        "#5AAE61",
+        "#1B7837",
+        "#00441B"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/PRGn.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "e448809d9f2d4ef830a37167629620d851e11de04bbb44b8298bd3b20fe5439e"
+    },
+    {
+      "id": "open-piyg",
+      "name": "ColorBrewer · PiYG",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#8E0152",
+        "#C51B7D",
+        "#DE77AE",
+        "#F1B6DA",
+        "#FDE0EF",
+        "#F7F7F7",
+        "#E6F5D0",
+        "#B8E186",
+        "#7FBC41",
+        "#4D9221",
+        "#276419"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/PiYG.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "6352718008218c7a792352ddb40dda676c2640cc387ffe8a1d9aa88c600b0e48"
+    },
+    {
+      "id": "open-puor",
+      "name": "ColorBrewer · PuOr",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#2D004B",
+        "#542788",
+        "#8073AC",
+        "#B2ABD2",
+        "#D8DAEB",
+        "#F7F7F7",
+        "#FEE0B6",
+        "#FDB863",
+        "#E08214",
+        "#B35806",
+        "#7F3B08"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/PuOr.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "4bda5d5b4debf36b6ac4e58dbe32078574fbf6fec3d18e472b74f0637a9d5524"
+    },
+    {
+      "id": "open-rdbu",
+      "name": "ColorBrewer · RdBu",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#67001F",
+        "#B2182B",
+        "#D6604D",
+        "#F4A582",
+        "#FDDBC7",
+        "#F7F7F7",
+        "#D1E5F0",
+        "#92C5DE",
+        "#4393C3",
+        "#2166AC",
+        "#053061"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/RdBu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "56dfe90759e6bedbec893754893c1951e86d9eddcd3de0f6502de461464e8f9f"
+    },
+    {
+      "id": "open-rdgy",
+      "name": "ColorBrewer · RdGy",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#67001F",
+        "#B2182B",
+        "#D6604D",
+        "#F4A582",
+        "#FDDBC7",
+        "#FFFFFF",
+        "#E0E0E0",
+        "#BABABA",
+        "#878787",
+        "#4D4D4D",
+        "#1A1A1A"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/RdGy.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "9b3a1fadaab3d007ebd559a2c1cf5a29e30b1e6b60fff5c63385c152afcd8e53"
+    },
+    {
+      "id": "open-rdylbu",
+      "name": "ColorBrewer · RdYlBu",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#A50026",
+        "#D73027",
+        "#F46D43",
+        "#FDAE61",
+        "#FEE090",
+        "#FFFFBF",
+        "#E0F3F8",
+        "#ABD9E9",
+        "#74ADD1",
+        "#4575B4",
+        "#313695"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/RdYlBu.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "9f52fa2fa04ff47b9e23a50892a2498d69b9e1f9705f6e455b386d708bb4e19c"
+    },
+    {
+      "id": "open-rdylgn",
+      "name": "ColorBrewer · RdYlGn",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#A50026",
+        "#D73027",
+        "#F46D43",
+        "#FDAE61",
+        "#FEE08B",
+        "#FFFFBF",
+        "#D9EF8B",
+        "#A6D96A",
+        "#66BD63",
+        "#1A9850",
+        "#006837"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/RdYlGn.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "6e23d02bb9299db05d0671b18c8b7b96b3b1de7df86b83179a777d88681a9769"
+    },
+    {
+      "id": "open-spectral",
+      "name": "ColorBrewer · Spectral",
+      "type": "diverging",
+      "collection": "Open-source",
+      "origin": "colorbrewer",
+      "colors": [
+        "#9E0142",
+        "#D53E4F",
+        "#F46D43",
+        "#FDAE61",
+        "#FEE08B",
+        "#FFFFBF",
+        "#E6F598",
+        "#ABDDA4",
+        "#66C2A5",
+        "#3288BD",
+        "#5E4FA2"
+      ],
+      "family": "ColorBrewer",
+      "license": "Apache-2.0",
+      "source": "https://github.com/d3/d3-scale-chromatic/blob/v3.1.0/src/diverging/Spectral.js",
+      "sourceVersion": "d3-scale-chromatic 3.1.0",
+      "attribution": "Cynthia Brewer, Mark Harrower, Pennsylvania State University; distributed by D3.",
+      "note": "原始最大档 11 色离散色阶；两端偏离中点的数值；应显式设置中心值。",
+      "sampling": {
+        "method": "original discrete scheme",
+        "count": 11
+      },
+      "sourceSha256": "40c48d5a8cf9b63e6bd80c7408d31d5376d644c6c311cb9d548daf9162035a85"
+    },
+    {
+      "id": "mpl-viridis",
+      "name": "Matplotlib · viridis",
+      "type": "sequential",
+      "colors": [
+        "#440154",
+        "#472D7B",
+        "#3B528B",
+        "#2C728E",
+        "#21918C",
+        "#28AE80",
+        "#5EC962",
+        "#ADDC30",
+        "#FDE725"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "viridis",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-plasma",
+      "name": "Matplotlib · plasma",
+      "type": "sequential",
+      "colors": [
+        "#0D0887",
+        "#4C02A1",
+        "#7E03A8",
+        "#AA2395",
+        "#CC4778",
+        "#E66C5C",
+        "#F89540",
+        "#FDC527",
+        "#F0F921"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "plasma",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-inferno",
+      "name": "Matplotlib · inferno",
+      "type": "sequential",
+      "colors": [
+        "#000004",
+        "#210C4A",
+        "#57106E",
+        "#8A226A",
+        "#BC3754",
+        "#E45A31",
+        "#F98E09",
+        "#F9CB35",
+        "#FCFFA4"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "inferno",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-magma",
+      "name": "Matplotlib · magma",
+      "type": "sequential",
+      "colors": [
+        "#000004",
+        "#1D1147",
+        "#51127C",
+        "#832681",
+        "#B73779",
+        "#E75263",
+        "#FC8961",
+        "#FEC488",
+        "#FCFDBF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "magma",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-cividis",
+      "name": "Matplotlib · cividis",
+      "type": "sequential",
+      "colors": [
+        "#00224E",
+        "#1A386F",
+        "#434E6C",
+        "#61656F",
+        "#7D7C78",
+        "#9B9476",
+        "#BCAE6C",
+        "#DEC958",
+        "#FEE838"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "cividis",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-turbo",
+      "name": "Matplotlib · turbo",
+      "type": "miscellaneous",
+      "colors": [
+        "#30123B",
+        "#466BE3",
+        "#28BCEB",
+        "#32F298",
+        "#A4FC3C",
+        "#EECF3A",
+        "#FB7E21",
+        "#D02F05",
+        "#7A0403"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "turbo",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-cubehelix",
+      "name": "Matplotlib · cubehelix",
+      "type": "sequential",
+      "colors": [
+        "#000000",
+        "#1B1E3B",
+        "#16534C",
+        "#447731",
+        "#A1794A",
+        "#D484A9",
+        "#C6B4EE",
+        "#CBE8F0",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "cubehelix",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-coolwarm",
+      "name": "Matplotlib · coolwarm",
+      "type": "diverging",
+      "colors": [
+        "#3B4CC0",
+        "#6282EA",
+        "#8DB0FE",
+        "#B9D0F9",
+        "#DDDCDC",
+        "#F5C4AC",
+        "#F4987A",
+        "#DD5F4B",
+        "#B40426"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "coolwarm",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-twilight",
+      "name": "Matplotlib · twilight",
+      "type": "cyclic",
+      "colors": [
+        "#E2D9E2",
+        "#B3C6CE",
+        "#7BA1C2",
+        "#6276BA",
+        "#5E43A5",
+        "#4E186F",
+        "#2F1436",
+        "#581647",
+        "#8E2C50",
+        "#B25652",
+        "#C68A6D",
+        "#D4BCAC"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "twilight",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 循环色图在 [0,1) 均匀取 12 点，不重复首尾。适用于相位与方向。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 12,
+        "positions": [
+          0.0,
+          0.08333333333333333,
+          0.16666666666666666,
+          0.25,
+          0.3333333333333333,
+          0.4166666666666667,
+          0.5,
+          0.5833333333333334,
+          0.6666666666666666,
+          0.75,
+          0.8333333333333334,
+          0.9166666666666666
+        ],
+        "endpoint": false
+      }
+    },
+    {
+      "id": "mpl-terrain",
+      "name": "Matplotlib · terrain",
+      "type": "miscellaneous",
+      "colors": [
+        "#333399",
+        "#0888EE",
+        "#01CC66",
+        "#81E680",
+        "#FEFE98",
+        "#BEAC76",
+        "#815E56",
+        "#C1B0AC",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "terrain",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-ocean",
+      "name": "Matplotlib · ocean",
+      "type": "miscellaneous",
+      "colors": [
+        "#008000",
+        "#005020",
+        "#002040",
+        "#001060",
+        "#004080",
+        "#0070A0",
+        "#42A0C0",
+        "#A2D0E0",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "ocean",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-gist_earth",
+      "name": "Matplotlib · gist_earth",
+      "type": "miscellaneous",
+      "colors": [
+        "#000000",
+        "#153978",
+        "#2B737E",
+        "#3B8E62",
+        "#5EA04B",
+        "#99AF58",
+        "#BDAB62",
+        "#DAB7A0",
+        "#FDFBFB"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "gist_earth",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-bone",
+      "name": "Matplotlib · bone",
+      "type": "sequential",
+      "colors": [
+        "#000000",
+        "#1C1C27",
+        "#38384E",
+        "#545574",
+        "#707B90",
+        "#8CA2AC",
+        "#A9C8C8",
+        "#D5E4E4",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "bone",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-copper",
+      "name": "Matplotlib · copper",
+      "type": "sequential",
+      "colors": [
+        "#000000",
+        "#281910",
+        "#4F3220",
+        "#774B30",
+        "#9E6440",
+        "#C67D50",
+        "#ED9660",
+        "#FFAF6F",
+        "#FFC77F"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "copper",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-pink",
+      "name": "Matplotlib · pink",
+      "type": "sequential",
+      "colors": [
+        "#1E0000",
+        "#744A4A",
+        "#A16868",
+        "#C38280",
+        "#D0AC94",
+        "#DDCDA5",
+        "#E9E9B6",
+        "#F4F4DE",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "pink",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-hot",
+      "name": "Matplotlib · hot",
+      "type": "sequential",
+      "colors": [
+        "#0B0000",
+        "#5F0000",
+        "#B30000",
+        "#FF0800",
+        "#FF5C00",
+        "#FFB000",
+        "#FFFF07",
+        "#FFFF85",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "hot",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-cool",
+      "name": "Matplotlib · cool",
+      "type": "sequential",
+      "colors": [
+        "#00FFFF",
+        "#20DFFF",
+        "#40BFFF",
+        "#609FFF",
+        "#807FFF",
+        "#A05FFF",
+        "#C03FFF",
+        "#E01FFF",
+        "#FF00FF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "cool",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-wistia",
+      "name": "Matplotlib · Wistia",
+      "type": "sequential",
+      "colors": [
+        "#E4FF7A",
+        "#F2F34A",
+        "#FFE81A",
+        "#FFD20D",
+        "#FFBD00",
+        "#FFAE00",
+        "#FFA000",
+        "#FD8F00",
+        "#FC7F00"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "Wistia",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-gnuplot",
+      "name": "Matplotlib · gnuplot",
+      "type": "miscellaneous",
+      "colors": [
+        "#000000",
+        "#5A01B5",
+        "#8004FF",
+        "#9C0EB3",
+        "#B52000",
+        "#CA3F00",
+        "#DD6D00",
+        "#EFAD00",
+        "#FFFF00"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "gnuplot",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-gnuplot2",
+      "name": "Matplotlib · gnuplot2",
+      "type": "miscellaneous",
+      "colors": [
+        "#000000",
+        "#000080",
+        "#0100FF",
+        "#6500FF",
+        "#C92AD5",
+        "#FF6A95",
+        "#FFAA55",
+        "#FFEA15",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "gnuplot2",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-brg",
+      "name": "Matplotlib · brg",
+      "type": "miscellaneous",
+      "colors": [
+        "#0000FF",
+        "#4000BF",
+        "#80007F",
+        "#C0003F",
+        "#FE0100",
+        "#BE4100",
+        "#7E8100",
+        "#3EC100",
+        "#00FF00"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "brg",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-hsv",
+      "name": "Matplotlib · hsv",
+      "type": "cyclic",
+      "colors": [
+        "#FF0000",
+        "#FF7C00",
+        "#FCF500",
+        "#84FF00",
+        "#08FF00",
+        "#00FF74",
+        "#00FFF6",
+        "#008CFF",
+        "#0010FF",
+        "#7200FF",
+        "#EE00FF",
+        "#FF0094"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "hsv",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 循环色图在 [0,1) 均匀取 12 点，不重复首尾。适用于相位与方向。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 12,
+        "positions": [
+          0.0,
+          0.08333333333333333,
+          0.16666666666666666,
+          0.25,
+          0.3333333333333333,
+          0.4166666666666667,
+          0.5,
+          0.5833333333333334,
+          0.6666666666666666,
+          0.75,
+          0.8333333333333334,
+          0.9166666666666666
+        ],
+        "endpoint": false
+      }
+    },
+    {
+      "id": "mpl-cmrmap",
+      "name": "Matplotlib · CMRmap",
+      "type": "miscellaneous",
+      "colors": [
+        "#000000",
+        "#262680",
+        "#4D26BF",
+        "#9A337E",
+        "#FF4126",
+        "#E68100",
+        "#E6C01C",
+        "#E6E683",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "CMRmap",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-afmhot",
+      "name": "Matplotlib · afmhot",
+      "type": "sequential",
+      "colors": [
+        "#000000",
+        "#400000",
+        "#800000",
+        "#C04000",
+        "#FF8001",
+        "#FFC041",
+        "#FFFF81",
+        "#FFFFC1",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "afmhot",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    },
+    {
+      "id": "mpl-gist_heat",
+      "name": "Matplotlib · gist_heat",
+      "type": "sequential",
+      "colors": [
+        "#000000",
+        "#300000",
+        "#600000",
+        "#900000",
+        "#C00100",
+        "#F04100",
+        "#FF8103",
+        "#FFC183",
+        "#FFFFFF"
+      ],
+      "collection": "Open-source",
+      "origin": "matplotlib",
+      "family": "Matplotlib",
+      "license": "Matplotlib license (PSF-derived)",
+      "sourceVersion": "3.6.3",
+      "source": "https://github.com/matplotlib/matplotlib/tree/v3.6.3",
+      "upstreamName": "gist_heat",
+      "attribution": "Matplotlib Development Team; colormap authors credited by upstream.",
+      "note": "Matplotlib 3.6.3 原色图在 [0,1] 均匀取 9 个离散样本。 非感知均匀性保证；使用前检查亮度、色觉和数据含义。",
+      "sampling": {
+        "method": "uniform samples of original colormap",
+        "count": 9,
+        "positions": [
+          0.0,
+          0.125,
+          0.25,
+          0.375,
+          0.5,
+          0.625,
+          0.75,
+          0.875,
+          1.0
+        ],
+        "endpoint": true
+      }
+    }
+  ]
+}

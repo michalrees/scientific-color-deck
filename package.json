@@ -1,0 +1,59 @@
+{
+  "name": "scientific-color-deck",
+  "displayName": "Scientific Color Deck",
+  "description": "科研绘图色卡：颜色查询、图片取色、配色代码导出及色觉缺陷模拟。",
+  "version": "0.5.0",
+  "publisher": "YuHaoran251",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "color",
+    "palette",
+    "scientific",
+    "colorblind",
+    "matplotlib"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:scientificColorDeck.open"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "scientificColorDeck.open",
+        "title": "打开科研色卡",
+        "category": "Scientific Color Deck"
+      },
+      {
+        "command": "scientificColorDeck.lookupSelection",
+        "title": "查看选中颜色",
+        "category": "Scientific Color Deck"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "check": "npm run compile && node tools/check.js",
+    "package": "npx @vscode/vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michalrees/scientific-color-deck.git"
+  },
+  "homepage": "https://github.com/michalrees/scientific-color-deck#readme",
+  "bugs": {
+    "url": "https://github.com/michalrees/scientific-color-deck/issues"
+  }
+}

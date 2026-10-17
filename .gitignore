@@ -1,0 +1,11 @@
+node_modules/
+out/
+*.vsix
+sources/
+
+# Local release records and generated previews
+MARKETPLACE-RELEASE.json
+*.vsix.sha256
+preview*.jpg
+__pycache__/
+*.pyc

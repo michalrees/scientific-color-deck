@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob:; style-src __CSP__ 'unsafe-inline'; script-src 'nonce-__NONCE__'; connect-src 'none';">
+<link rel="stylesheet" href="__STYLE__">
+<title>Scientific Color Deck</title>
+</head>
+<body>
+<header>
+  <div><div class="eyebrow">SCIENTIFIC COLOR DECK / 01</div><h1>让颜色，清晰可见。</h1><p>从一个色值到一张科研图表，在这里找到合适的颜色。</p></div>
+  <span class="local-badge"><i></i>本地处理</span>
+</header>
+<nav aria-label="功能导航">
+  <button class="tab active" data-tab="lookup" aria-selected="true">01 <span>查颜色</span></button>
+  <button class="tab" data-tab="compare" aria-selected="false">02 <span>比颜色</span></button>
+  <button class="tab" data-tab="palettes" aria-selected="false">03 <span>科研配色</span></button>
+  <button class="tab" data-tab="gallery" aria-selected="false">04 <span>图表图鉴</span></button>
+  <button class="tab" data-tab="accessibility" aria-selected="false">05 <span>色觉检查</span></button>
+</nav>
+<main>
+<section id="lookup" class="page">
+  <div class="section-heading"><h2>颜色代码 → 色卡</h2><span>HEX / RGB / HSL</span></div>
+  <form id="lookup-form" class="search"><label class="sr-only" for="color-input">输入颜色代码</label><input id="color-input" value="#4477AA" placeholder="#4477AA 或 rgb(68,119,170)" autocomplete="off" spellcheck="false"><button type="submit" class="primary">查看颜色 ↗</button></form>
+  <p id="lookup-error" class="error" role="alert"></p>
+  <div class="color-result"><div class="hero-color" id="hero-color"><span id="hero-label">#4477AA</span></div><div class="color-values" id="color-values"></div></div>
+  <div class="section-heading"><h2>照片 → 颜色代码</h2><button id="open-image">＋ 打开图片</button></div>
+  <p class="muted">点击图片读取原图对应像素，或提取近似主色。透明像素按白底合成；GIF 读取静态帧。</p>
+  <div class="image-layout">
+    <div class="image-stage" id="image-stage"><div id="image-empty"><span class="empty-symbol">⌖</span><p>打开你的图表、色卡或照片</p><small>PNG · JPEG · WebP · GIF · BMP / 最大 15 MB、2000 万像素</small></div><canvas id="image-canvas" hidden aria-label="图片取色区域" tabindex="0"></canvas></div>
+    <div class="image-tools"><h3>图片主色</h3><p id="image-info" class="muted">尚未打开图片</p><label for="color-count">主色数量</label><select id="color-count"><option>4</option><option selected>6</option><option>8</option><option>10</option></select><button id="extract" disabled>提取主色</button><div id="image-colors" class="image-colors"></div><button id="use-extracted" disabled>用这组颜色生成代码 →</button><p id="picked-pixel" class="muted"></p></div>
+  </div>
+</section>
+<section id="compare" class="page" hidden>
+  <div class="section-heading"><h2>两个颜色，并排比较</h2><span>HEX / RGB / HSL / 名称</span></div>
+  <form id="compare-form" class="compare-inputs"><label>颜色 A<input id="compare-a" value="#4477AA" spellcheck="false"></label><label>颜色 B<input id="compare-b" value="#66CCEE" spellcheck="false"></label><button type="submit" class="primary">比较颜色 ↗</button><button type="button" id="swap-colors">交换 A / B</button></form>
+  <p id="compare-error" class="error" role="alert"></p>
+  <div id="compare-results" class="compare-results" aria-live="polite"></div>
+  <p class="muted">透明色按白底合成；显示效果受显示器和色彩管理影响。</p>
+  <div class="section-heading"><h2>Matplotlib 颜色对照表</h2><span id="named-count"></span></div>
+  <label for="named-search">搜索名称或编码</label><input id="named-search" placeholder="例如 cornflowerblue、#6495ED、b…" spellcheck="false">
+  <p class="muted">CSS4 标准命名色与 Matplotlib 单字母简称；简称 g 为 #008000、c 为 #00BFBF，与部分同名 CSS 色不同。点击编码复制，或填入 A / B 比较。</p>
+  <div class="named-table-wrap"><table class="named-table"><thead><tr><th scope="col">颜色</th><th scope="col">名称</th><th scope="col">编码 · HEX / RGB</th><th scope="col">比较</th></tr></thead><tbody id="named-rows"></tbody></table></div>
+</section>
+<section id="palettes" class="page" hidden>
+  <div class="section-heading"><h2>为数据选择颜色</h2><span>预置 + 代码</span></div>
+  <div class="library-summary" id="personal-summary"></div>
+  <div class="collection-row" role="group" aria-label="配色分类"><button class="collection active" data-collection="Open-source">开源配色</button><button class="collection" data-collection="Personal">Personal</button><button class="collection" data-collection="Built-in">内置</button><button class="collection" data-collection="all">全部分类</button></div>
+  <div class="library-search"><label class="sr-only" for="palette-search">搜索配色</label><input id="palette-search" placeholder="搜索配色名称或色值…"><label for="palette-origin">来源</label><select id="palette-origin"><option value="all">全部来源</option><option value="markdown">个人截图 / Markdown</option><option value="nature">nature-figure</option><option value="colorbrewer">ColorBrewer</option><option value="d3">D3 分类色</option><option value="matplotlib">Matplotlib</option><option value="builtin">内置配色</option></select></div>
+  <p id="palette-count" class="muted"></p>
+  <div class="filters" role="group" aria-label="配色类型"><button class="filter active" data-filter="all">全部</button><button class="filter" data-filter="qualitative">分类 · 不同组别</button><button class="filter" data-filter="sequential">顺序 · 从低到高</button><button class="filter" data-filter="diverging">发散 · 偏离中点</button><button class="filter" data-filter="cyclic">循环 · 相位与方向</button><button class="filter" data-filter="miscellaneous">其他 · 按用途选择</button></div>
+  <div id="palette-grid" class="palette-grid"></div>
+  <article class="export-panel"><div class="section-heading"><h2 id="selected-palette">Tol · Bright</h2><button id="check-palette">检查这组颜色 ↗</button></div><div id="selected-swatches" class="swatch-strip"></div><p id="palette-note" class="muted"></p><p id="palette-license" class="muted"></p><button id="copy-source">复制来源链接</button><div class="code-toolbar"><label for="export-format">配套代码</label><select id="export-format"><option value="python">Python / Matplotlib</option><option value="r">R / ggplot2</option><option value="matlab">MATLAB</option><option value="css">CSS 变量</option><option value="json">JSON 数组</option></select><button id="copy-code" class="primary">复制代码</button></div><pre><code id="palette-code"></code></pre><p class="muted">分类色用于不同组别，顺序与发散色用于有序数值。细线、小点仍建议配合线型、标记和直接标签。</p></article>
+</section>
+<section id="accessibility" class="page" hidden>
+  <div class="section-heading"><h2>换一种色觉，看同一张图</h2><span>模拟预览</span></div>
+  <p class="muted">近似模拟完整程度的红色觉、绿色觉和蓝黄色觉缺陷。用于检查图表，不用于诊断个人色觉；不能保证某组颜色对所有读者都可辨。</p>
+  <div class="control-row"><label for="vision-mode">预览模式</label><select id="vision-mode"><option value="deutan">绿色觉缺陷 · Deutan</option><option value="protan">红色觉缺陷 · Protan</option><option value="tritan">蓝黄色觉缺陷 · Tritan</option><option value="gray">灰度 / 打印检查</option><option value="normal">原始颜色</option></select></div>
+  <article class="comparison"><div><h3>原始配色</h3><div id="original-swatches" class="swatch-strip"></div></div><div><h3 id="simulation-title">模拟配色</h3><div id="simulated-swatches" class="swatch-strip"></div></div></article>
+  <div class="section-heading"><h2>图片模拟</h2><button id="open-simulation-image">＋ 打开图片</button></div>
+  <p class="muted" id="simulation-info">使用“查颜色”中同一张图片。预览会缩小到最长边 1000 像素，白底合成。</p>
+  <div class="comparison image-comparison"><div><h3>原图预览</h3><canvas id="original-preview" hidden></canvas><p class="no-image">打开图片后显示</p></div><div><h3>模拟预览</h3><canvas id="simulated-preview" hidden></canvas><p class="no-image">打开图片后显示</p></div></div>
+  <button id="save-simulation" disabled>保存当前模拟预览 PNG</button>
+  <article class="contrast-panel"><div class="section-heading"><h2>文字与背景的对比度</h2><span>WCAG AA</span></div><div class="contrast-inputs"><label>文字颜色<input id="foreground" value="#4477AA" spellcheck="false"></label><label>背景颜色<input id="background" value="#FFFFFF" spellcheck="false"></label><button id="check-contrast">计算对比度</button></div><p id="contrast-error" class="error" role="alert"></p><div class="contrast-output"><div id="contrast-sample">Aa <span>科研绘图 · Sample text</span></div><div><strong id="contrast-ratio"></strong><p id="contrast-verdict"></p></div></div><p class="muted">普通文字 AA ≥ 4.5:1，大号文字 AA ≥ 3:1（至少 18 pt，或粗体 14 pt）。比值按未四舍五入的数值判断；不作为数据系列可辨识性的评分。透明背景先合成至白色。</p></article>
+  <p class="muted sources">算法与配色来源见项目 README。模拟采用 Machado 全程度矩阵、线性 sRGB 变换；灰度采用相对亮度。</p>
+</section>
+<section id="gallery" class="page" hidden>
+  <div class="section-heading"><h2>科研图表图鉴</h2><button id="copy-chart-index">复制图种清单</button></div>
+  <p id="gallery-summary" class="muted"></p>
+  <p class="muted">每张缩略图为原创合成演示，可按来源与类别查找。Origin 收录范围为指定 Graphing 主页面，含命名子类型，不递归打包外链图库。3D 为固定投影；统计与水化学图只展示结构，不执行 Origin 分析功能。</p>
+  <div class="collection-row"><button id="personal-catalog">Personal · 60 类</button><button id="origin-catalog">Origin · 图种目录</button></div><div class="library-search"><label class="sr-only" for="chart-search">搜索图种</label><input id="chart-search" placeholder="搜索图种、分组或用途…"><label for="chart-origin">图种来源</label><select id="chart-origin"><option value="all">全部来源</option><option value="origin">Origin 官网目录</option><option value="personal">Personal 全部</option><option value="markdown">Markdown 中出现</option><option value="nature">nature-figure 收录</option></select><label for="chart-family">分组</label><select id="chart-family"><option value="all">所有分组</option></select></div>
+  <p class="muted" id="chart-count"></p>
+  <p class="muted" id="chart-current-palette"></p>
+  <div id="chart-grid" class="chart-grid"></div><div class="control-row"><button id="chart-prev">上一页</button><span id="chart-page" aria-live="polite"></span><button id="chart-next">下一页</button></div>
+  <dialog id="chart-detail"><button id="close-chart-detail" class="close-detail" aria-label="关闭图种详情">×</button><h2 id="chart-detail-title"></h2><canvas id="chart-detail-canvas" width="960" height="600"></canvas><p id="chart-detail-description"></p><p id="chart-detail-source" class="muted"></p><button id="copy-chart-source">复制来源链接</button><button id="save-chart-preview">保存原创示意 PNG</button><p class="muted">图形示意 / ILLUSTRATIVE DATA · 不包含真实统计检验或实验结果。</p></dialog>
+</section>
+</main>
+<footer><span>COLOR / CODE / CLARITY</span><span id="status" role="status" aria-live="polite">准备就绪</span></footer>
+<script nonce="__NONCE__" src="__PERSONAL__"></script><script nonce="__NONCE__" src="__ORIGIN_LIBRARY__"></script><script nonce="__NONCE__" src="__ORIGIN_CHARTS__"></script><script nonce="__NONCE__" src="__GALLERY__"></script><script nonce="__NONCE__" src="__OPEN__"></script><script nonce="__NONCE__" src="__NAMES__"></script><script nonce="__NONCE__" src="__CORE__"></script><script nonce="__NONCE__" src="__APP__"></script>
+</body>
+</html>

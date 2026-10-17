@@ -1,0 +1,2096 @@
+(function(root,factory){if(typeof module==="object"&&module.exports)module.exports=factory();else root.PersonalLibrary=factory();})(typeof globalThis!=="undefined"?globalThis:this,function(){return {
+  "summary": {
+    "markdownImages": 44,
+    "markdownPalettes": 24,
+    "priorImagePalettes": 3,
+    "markdownNewPalettes": 21,
+    "markdownChartKinds": 31,
+    "naturePaletteDictionaries": 6,
+    "natureDefaultCycles": 2,
+    "natureAtlasFamilies": 10,
+    "natureAtlasExamplePanels": 160,
+    "natureAtlasNormalizedKinds": 36,
+    "natureCsvTemplates": 5,
+    "natureCatalogKinds": 41,
+    "combinedChartKinds": 60,
+    "personalPalettes": 32,
+    "natureCommit": "6827ae57b62b201acd06b401619050411c0d82f6",
+    "countingRule": "图种按此注册表去重；相同图种的配色/数据变化不重复计数。能力不限于这些已收录示例。"
+  },
+  "palettes": [
+    {
+      "id": "reference-red-blue",
+      "name": "参考图 1 · 红蓝对照",
+      "colors": [
+        "#8B001A",
+        "#FF0022",
+        "#FF8866",
+        "#FFDDC1",
+        "#A6E0EB",
+        "#37C0DF",
+        "#1696C9",
+        "#0B5AA7"
+      ],
+      "type": "diverging",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        1
+      ],
+      "originLabel": "此前三张参考图与 Markdown 重复，合并为同一项"
+    },
+    {
+      "id": "reference-blue-orange-red",
+      "name": "参考图 2 · 蓝橙红",
+      "colors": [
+        "#2267B0",
+        "#6BAED6",
+        "#C6E0EF",
+        "#F8E1D5",
+        "#F1996B",
+        "#B7182B"
+      ],
+      "type": "diverging",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        2
+      ],
+      "originLabel": "此前三张参考图与 Markdown 重复，合并为同一项"
+    },
+    {
+      "id": "reference-muted-blue-red",
+      "name": "参考图 3 · 雾蓝酒红",
+      "colors": [
+        "#33395B",
+        "#5D74A2",
+        "#C4D8F2",
+        "#F2E8E3",
+        "#8E2D30"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        3
+      ],
+      "originLabel": "此前三张参考图与 Markdown 重复，合并为同一项"
+    },
+    {
+      "id": "personal-teal-lime",
+      "name": "Personal · 青绿柠黄",
+      "colors": [
+        "#46788E",
+        "#78B7C9",
+        "#F6E093",
+        "#E58B7B",
+        "#97B319"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        4
+      ]
+    },
+    {
+      "id": "personal-pastel-six",
+      "name": "Personal · 六色马卡龙",
+      "colors": [
+        "#F9EBA7",
+        "#FBD6BE",
+        "#F6C0CE",
+        "#CAC0E3",
+        "#ABDAEC",
+        "#97D1A0"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        5
+      ]
+    },
+    {
+      "id": "personal-navy-sand",
+      "name": "Personal · 藏蓝沙金",
+      "colors": [
+        "#203888",
+        "#518DDD",
+        "#A7D2E4",
+        "#F5D7A3",
+        "#E19C66"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "以 HEX 标注为准；第2色 HEX #518DDD 对应 RGB(81,141,221)，原图 RGB 标签写成 219。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        6
+      ],
+      "issues": [
+        "第2色 HEX 与 RGB 标签冲突，采用 HEX。"
+      ]
+    },
+    {
+      "id": "personal-powder-five",
+      "name": "Personal · 粉蓝奶杏",
+      "colors": [
+        "#F9D0AF",
+        "#A3C9E2",
+        "#DDC7EF",
+        "#FFDDDE",
+        "#F2ABAB"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "末色文字位于截图右边缘，按可见 RGB(242,171,171) 记录。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        7
+      ]
+    },
+    {
+      "id": "personal-earth-seven",
+      "name": "Personal · 山海七色",
+      "colors": [
+        "#264653",
+        "#287271",
+        "#299D8F",
+        "#8AB07D",
+        "#E8C56B",
+        "#F3A261",
+        "#E66F51"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "personal-navy-gold",
+      "name": "Personal · 蓝金朱红",
+      "colors": [
+        "#4994C4",
+        "#12264F",
+        "#FAC03D",
+        "#EA5514"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        10
+      ]
+    },
+    {
+      "id": "personal-violet-coral",
+      "name": "Personal · 紫蓝暖橙",
+      "colors": [
+        "#433994",
+        "#80A6E2",
+        "#FBDD85",
+        "#F46F43",
+        "#CF433E"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        11,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "personal-coral-aqua",
+      "name": "Personal · 珊瑚青绿",
+      "colors": [
+        "#F0786A",
+        "#FFBC40",
+        "#0CBCC0"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        12
+      ]
+    },
+    {
+      "id": "personal-rust-teal",
+      "name": "Personal · 赤金湖绿",
+      "colors": [
+        "#AE2012",
+        "#EE9600",
+        "#099396"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        13
+      ]
+    },
+    {
+      "id": "personal-terrain-ten",
+      "name": "Personal · 山川十色",
+      "colors": [
+        "#E76254",
+        "#EF8A47",
+        "#F7AA58",
+        "#FFD06F",
+        "#EBE6B7",
+        "#AADCE0",
+        "#72BCD5",
+        "#528FAD",
+        "#376795",
+        "#1E466E"
+      ],
+      "type": "diverging",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        14,
+        17,
+        19
+      ]
+    },
+    {
+      "id": "personal-coast-five",
+      "name": "Personal · 海岸五色",
+      "colors": [
+        "#376795",
+        "#72BCD5",
+        "#FFD06F",
+        "#DC5358",
+        "#AADCE0"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "第4色原 RGB 标签误重复第2色，暂用截图色块中心近似取样 #DC5358；该色不是可靠的原始色号。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        15,
+        16,
+        18
+      ],
+      "issues": [
+        "第4色为截图近似取样，其余为标注值。"
+      ],
+      "approximateIndices": [
+        3
+      ],
+      "rawConflictingRGB": [
+        114,
+        188,
+        213
+      ]
+    },
+    {
+      "id": "personal-muted-five",
+      "name": "Personal · 柔雾五色",
+      "colors": [
+        "#E7A8B8",
+        "#98B0D1",
+        "#F7C2B3",
+        "#C3B6E6",
+        "#8EC6D2"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        20
+      ]
+    },
+    {
+      "id": "personal-bold-four",
+      "name": "Personal · 黑金蓝红",
+      "colors": [
+        "#211D1F",
+        "#F29221",
+        "#0B70B7",
+        "#C1282D"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        21,
+        31
+      ]
+    },
+    {
+      "id": "personal-cyan-lime",
+      "name": "Personal · 青蓝活力",
+      "colors": [
+        "#90C9E6",
+        "#219EBC",
+        "#023047",
+        "#FB8402",
+        "#7AC943"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        25,
+        27
+      ]
+    },
+    {
+      "id": "personal-blue-peach",
+      "name": "Personal · 雾蓝桃红",
+      "colors": [
+        "#82B0D2",
+        "#FFBE7A",
+        "#FA7F6F"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        26,
+        28
+      ]
+    },
+    {
+      "id": "personal-purple-gold-red",
+      "name": "Personal · 紫黄红渐变",
+      "colors": [
+        "#403990",
+        "#FFD22D",
+        "#CF433F"
+      ],
+      "type": "diverging",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "同一截图下半部的独立三色渐变；与上半部三色分类组分开统计。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        26,
+        28
+      ]
+    },
+    {
+      "id": "personal-pink-mint",
+      "name": "Personal · 玫粉薄荷",
+      "colors": [
+        "#ED789E",
+        "#65A9DC",
+        "#D0EBEC"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        29,
+        33
+      ]
+    },
+    {
+      "id": "personal-blue-wine",
+      "name": "Personal · 蓝珊瑚酒红",
+      "colors": [
+        "#4189C8",
+        "#F37E78",
+        "#8D1755"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        30,
+        32
+      ]
+    },
+    {
+      "id": "personal-rainbow-seven",
+      "name": "Personal · 明亮七色",
+      "colors": [
+        "#D43F3A",
+        "#EEA236",
+        "#5CB85C",
+        "#46B8DA",
+        "#357EBD",
+        "#9632B8",
+        "#B8B8B8"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "严格按 RGB 标签整理；第5色色块看起来偏浅青，与标注 #357EBD 不一致，仍保留标注值。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        34,
+        35,
+        36
+      ],
+      "issues": [
+        "第5色标签与截图色块观感不一致。"
+      ]
+    },
+    {
+      "id": "personal-lilac-six",
+      "name": "Personal · 丁香六色",
+      "colors": [
+        "#C489FF",
+        "#FF9999",
+        "#FFE699",
+        "#B4C7E7",
+        "#A9D18E",
+        "#BFBFBF"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        37,
+        38
+      ]
+    },
+    {
+      "id": "personal-coral-ice",
+      "name": "Personal · 珊瑚冰蓝",
+      "colors": [
+        "#EC804C",
+        "#77D6DD",
+        "#9ADAFA",
+        "#A7B5FD",
+        "#FF3938"
+      ],
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "markdown",
+      "source": null,
+      "note": "按截图标注整理，保持顺序；未经色觉可辨识性认证。",
+      "attribution": "个人提供的配色参考，原作者及使用许可未核实。",
+      "imageRefs": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "id": "nature-palette",
+      "name": "Nature · 基础语义色",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#0F4D92",
+        "#3775BA",
+        "#DDF3DE",
+        "#AADCA9",
+        "#8BCF8B",
+        "#F6CFCB",
+        "#E9A6A1",
+        "#B64342",
+        "#CFCECE",
+        "#767676",
+        "#4D4D4D",
+        "#272727",
+        "#FFD700",
+        "#42949E",
+        "#9A4D8E",
+        "#EA84DD"
+      ],
+      "colorNames": [
+        "blue_main",
+        "blue_secondary",
+        "green_1",
+        "green_2",
+        "green_3",
+        "red_1",
+        "red_2",
+        "red_strong",
+        "neutral_light",
+        "neutral_mid",
+        "neutral_dark",
+        "neutral_black",
+        "gold",
+        "teal",
+        "violet",
+        "magenta"
+      ],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "语义角色色表，按原字典顺序保留。",
+      "upstreamKey": "PALETTE"
+    },
+    {
+      "id": "nature-default_colors",
+      "name": "Nature · 默认六色循环",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#0F4D92",
+        "#8BCF8B",
+        "#B64342",
+        "#42949E",
+        "#9A4D8E",
+        "#CFCECE"
+      ],
+      "colorNames": [],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "按上游默认循环顺序保留的6色组合。",
+      "upstreamKey": "DEFAULT_COLORS"
+    },
+    {
+      "id": "nature-palette_nmi_pastel",
+      "name": "Nature · NMI Pastel 语义色",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#484878",
+        "#7884B4",
+        "#B4C0E4",
+        "#E4E4F0",
+        "#E4CCD8",
+        "#F0C0CC",
+        "#E0E0F0",
+        "#E0F0F0",
+        "#F0E0D0",
+        "#D8D8D8",
+        "#A8A8A8",
+        "#606060",
+        "#2E9E44",
+        "#E53935"
+      ],
+      "colorNames": [
+        "baseline_dark",
+        "baseline_mid",
+        "baseline_soft",
+        "ours_tiny",
+        "ours_base",
+        "ours_large",
+        "bg_lilac",
+        "bg_aqua",
+        "bg_peach",
+        "neutral_light",
+        "neutral_mid",
+        "neutral_dark",
+        "delta_up",
+        "delta_down"
+      ],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "语义角色色表，按原字典顺序保留。",
+      "upstreamKey": "PALETTE_NMI_PASTEL"
+    },
+    {
+      "id": "nature-default_colors_nmi_pastel",
+      "name": "Nature · NMI 六色循环",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#484878",
+        "#7884B4",
+        "#B4C0E4",
+        "#E4E4F0",
+        "#E4CCD8",
+        "#F0C0CC"
+      ],
+      "colorNames": [],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "按上游默认循环顺序保留的6色组合。",
+      "upstreamKey": "DEFAULT_COLORS_NMI_PASTEL"
+    },
+    {
+      "id": "nature-palette_nature_imaging",
+      "name": "Nature · 成像荧光",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#000000",
+        "#B8B8B8",
+        "#22D7E6",
+        "#FF2AD4",
+        "#FFFFFF"
+      ],
+      "colorNames": [
+        "bg",
+        "context",
+        "cyan",
+        "magenta",
+        "white"
+      ],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "语义角色色表，按原字典顺序保留。",
+      "upstreamKey": "PALETTE_NATURE_IMAGING"
+    },
+    {
+      "id": "nature-palette_nature_material",
+      "name": "Nature · 材料机制",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#77D7D1",
+        "#33B5A5",
+        "#B9A7E8",
+        "#7C6CCF",
+        "#E53935",
+        "#D9D9D9"
+      ],
+      "colorNames": [
+        "aqua",
+        "teal",
+        "lilac",
+        "violet",
+        "callout_red",
+        "neutral"
+      ],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "语义角色色表，按原字典顺序保留。",
+      "upstreamKey": "PALETTE_NATURE_MATERIAL"
+    },
+    {
+      "id": "nature-palette_nature_clinical",
+      "name": "Nature · 临床随访",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#272727",
+        "#E28E2C",
+        "#D24B40",
+        "#5B8FD6",
+        "#7BAA5B",
+        "#C45AD6",
+        "#F2E6D9"
+      ],
+      "colorNames": [
+        "baseline",
+        "week6",
+        "week13",
+        "week26",
+        "year1",
+        "year2",
+        "group_band"
+      ],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "语义角色色表，按原字典顺序保留。",
+      "upstreamKey": "PALETTE_NATURE_CLINICAL"
+    },
+    {
+      "id": "nature-palette_nature_genomics",
+      "name": "Nature · 基因组学",
+      "type": "qualitative",
+      "collection": "Personal",
+      "origin": "nature",
+      "colors": [
+        "#D8D8D8",
+        "#8F8F8F",
+        "#D9544D",
+        "#5B7FCA",
+        "#B89BD9",
+        "#4D4D4D"
+      ],
+      "colorNames": [
+        "neutral_light",
+        "neutral_mid",
+        "wave1",
+        "wave2",
+        "wave3",
+        "outline"
+      ],
+      "source": "https://github.com/Yuan1z0825/nature-skills/blob/6827ae57b62b201acd06b401619050411c0d82f6/skills/nature-figure/references/api.md",
+      "attribution": "nature-figure API 配色定义；语义色字典不代表推荐将全部颜色同时作为分类色。",
+      "note": "语义角色色表，按原字典顺序保留。",
+      "upstreamKey": "PALETTE_NATURE_GENOMICS"
+    }
+  ],
+  "charts": [
+    {
+      "id": "bar",
+      "name": "单系列柱状图",
+      "family": "比较",
+      "description": "比较独立类别的量值。",
+      "markdownImages": [
+        25
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-01-bar-charts.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "grouped-bar",
+      "name": "分组柱状图",
+      "family": "比较",
+      "description": "同一类别内比较多个系列；误差条可表达不确定性。",
+      "markdownImages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-01-bar-charts.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "stacked-bar",
+      "name": "堆叠柱状图",
+      "family": "组成",
+      "description": "展示各类别的总量与内部组成。",
+      "markdownImages": [
+        3,
+        4,
+        5
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-01-bar-charts.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "horizontal-stacked",
+      "name": "水平百分比堆叠条形图",
+      "family": "组成",
+      "description": "用于问卷或各组比例，示意中每行总和为100%。",
+      "markdownImages": [
+        4,
+        7,
+        8,
+        15,
+        16,
+        18,
+        20,
+        22,
+        24,
+        25,
+        27,
+        34,
+        37,
+        39,
+        42
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "signed-bar",
+      "name": "正负差值柱状图",
+      "family": "比较",
+      "description": "围绕零比较增减或差值。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-01-bar-charts.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "log-bar",
+      "name": "对数柱状图",
+      "family": "比较",
+      "description": "比较跨数量级的正值。",
+      "markdownImages": [],
+      "natureReferences": [
+        "references/chart-types.md#log-scale-bar-chart"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "line",
+      "name": "多系列折线图",
+      "family": "趋势",
+      "description": "展示有序横轴上的连续变化。",
+      "markdownImages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-02-line-trends.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "ribbon",
+      "name": "带置信带折线图",
+      "family": "趋势",
+      "description": "趋势线与其不确定性范围。",
+      "markdownImages": [
+        5
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-02-line-trends.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "error-line",
+      "name": "带误差条折线图",
+      "family": "趋势",
+      "description": "各测量点的误差条与连接趋势。",
+      "markdownImages": [
+        6
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "event-line",
+      "name": "事件标记趋势图",
+      "family": "趋势",
+      "description": "标出干预或事件发生时点。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-02-line-trends.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "individual-traces",
+      "name": "个体轨迹叠加图",
+      "family": "趋势",
+      "description": "个体变化与总体趋势同时展示。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-02-line-trends.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "step",
+      "name": "阶梯趋势图",
+      "family": "趋势",
+      "description": "分段保持、离散时点更新的变化。",
+      "markdownImages": [
+        7,
+        8,
+        10,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24,
+        31,
+        34,
+        37,
+        39,
+        42
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "gradient-line",
+      "name": "连续着色曲线",
+      "family": "趋势",
+      "description": "同一曲线沿位置或数值连续编码颜色。",
+      "markdownImages": [
+        26,
+        28,
+        36,
+        40,
+        43
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "heatmap",
+      "name": "矩阵热图",
+      "family": "矩阵",
+      "description": "用色阶编码矩阵数值，需说明色条单位。",
+      "markdownImages": [
+        1,
+        4,
+        6,
+        9,
+        11,
+        22,
+        23,
+        36
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-03-heatmaps.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "sequential-heatmap",
+      "name": "顺序色阶热图",
+      "family": "矩阵",
+      "description": "非负或单向大小变化使用浅深色阶。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-03-heatmaps.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "annotated-heatmap",
+      "name": "数值标注热图",
+      "family": "矩阵",
+      "description": "在色格中显示具体数值。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-03-heatmaps.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "cluster-heatmap",
+      "name": "聚类热图",
+      "family": "矩阵",
+      "description": "热图配合行列层次聚类树。",
+      "markdownImages": [
+        2,
+        3,
+        5,
+        11,
+        22,
+        23
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "scatter",
+      "name": "连续着色散点图",
+      "family": "关系",
+      "description": "点的位置表达双变量，颜色可表达第三个量。",
+      "markdownImages": [
+        1
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "regression",
+      "name": "散点与回归线",
+      "family": "关系",
+      "description": "展示双变量关系及拟合趋势；示意不用于推断。",
+      "markdownImages": [
+        3,
+        5,
+        6
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-04-scatter-bubble.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "clusters",
+      "name": "分簇散点图",
+      "family": "关系",
+      "description": "以颜色区分不同点群。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-04-scatter-bubble.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "bubble",
+      "name": "气泡散点图",
+      "family": "关系",
+      "description": "点的面积与颜色表达额外变量。",
+      "markdownImages": [
+        2
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-04-scatter-bubble.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "volcano",
+      "name": "火山图",
+      "family": "关系",
+      "description": "效应大小与负对数显著性，阈值线仅为演示。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-04-scatter-bubble.png",
+        "references/template-catalog.md#volcano"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "radar",
+      "name": "雷达图",
+      "family": "极坐标",
+      "description": "在多维轴上比较轮廓；不同轴需可比。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-05-radar-polar.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "polar-bars",
+      "name": "极坐标柱状图",
+      "family": "极坐标",
+      "description": "按方向或周期分组比较幅度。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-05-radar-polar.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "polar-density",
+      "name": "极坐标密度曲线",
+      "family": "极坐标",
+      "description": "方向或周期变量的连续分布。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-05-radar-polar.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "polar-scatter",
+      "name": "极坐标散点图",
+      "family": "极坐标",
+      "description": "以角度和半径放置观测点。",
+      "markdownImages": [
+        11,
+        22,
+        23,
+        35,
+        38,
+        40,
+        43
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "sector-bubble",
+      "name": "扇形坐标气泡图",
+      "family": "极坐标",
+      "description": "极坐标扇区内以气泡面积编码数值，并非三元图。",
+      "markdownImages": [
+        11,
+        22,
+        23,
+        35,
+        38,
+        40,
+        43
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "annular-scatter",
+      "name": "环形坐标散点图",
+      "family": "极坐标",
+      "description": "点布置在环带中，用角度表达周期。",
+      "markdownImages": [
+        11,
+        22,
+        23,
+        35,
+        38,
+        40,
+        43
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "globe",
+      "name": "球面投影散点图",
+      "family": "空间",
+      "description": "以投影球面上的点示意空间分布。",
+      "markdownImages": [
+        11,
+        22,
+        23,
+        35,
+        38,
+        40,
+        43
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "histogram",
+      "name": "直方图",
+      "family": "分布",
+      "description": "按连续数值区间统计频数。",
+      "markdownImages": [
+        13
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-06-distributions.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "grouped-histogram",
+      "name": "分组直方图",
+      "family": "分布",
+      "description": "多个分布使用同一组区间并排比较。",
+      "markdownImages": [
+        7,
+        8,
+        10,
+        12,
+        13,
+        15,
+        16,
+        18,
+        20,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39,
+        41,
+        42,
+        44
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "stacked-histogram",
+      "name": "堆叠直方图",
+      "family": "分布",
+      "description": "在共同区间上堆叠多个分布的频数。",
+      "markdownImages": [
+        10,
+        12,
+        13,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        35,
+        38,
+        41,
+        44
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "step-histogram",
+      "name": "轮廓直方图",
+      "family": "分布",
+      "description": "仅绘制各分布的直方轮廓。",
+      "markdownImages": [
+        10,
+        12,
+        13,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        35,
+        38,
+        41,
+        44
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "density",
+      "name": "概率密度曲线",
+      "family": "分布",
+      "description": "平滑分布形状，须注明密度估计方法。",
+      "markdownImages": [
+        41,
+        44
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "violin",
+      "name": "小提琴图",
+      "family": "分布",
+      "description": "对称密度展示分布形状。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-06-distributions.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "box",
+      "name": "箱线图",
+      "family": "分布",
+      "description": "显示中位数、四分位范围及须。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-06-distributions.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "violin-box",
+      "name": "小提琴与箱线组合图",
+      "family": "分布",
+      "description": "密度形状与分位数摘要合并显示。",
+      "markdownImages": [
+        5,
+        6
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "ridgeline",
+      "name": "山脊密度图",
+      "family": "分布",
+      "description": "多个分布沿基线错位堆叠。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-06-distributions.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "forest",
+      "name": "森林图",
+      "family": "区间",
+      "description": "点估计与水平置信区间。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-07-forest-interval.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "paired",
+      "name": "配对斜率图",
+      "family": "区间",
+      "description": "同一对象两条件之间的对应变化。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-07-forest-interval.png",
+        "references/template-catalog.md#paired"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "point-range",
+      "name": "点区间图",
+      "family": "区间",
+      "description": "点估计与垂直不确定性区间。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-07-forest-interval.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "area",
+      "name": "填充面积趋势图",
+      "family": "组成",
+      "description": "单条趋势到基线的填充。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-08-area-stacked.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "stacked-area",
+      "name": "堆叠面积图",
+      "family": "组成",
+      "description": "总量和各组随时间的组成变化。",
+      "markdownImages": [
+        1,
+        2,
+        6
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-08-area-stacked.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "stream",
+      "name": "流图",
+      "family": "组成",
+      "description": "以变化基线排列多个连续组成。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-08-area-stacked.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "cumulative",
+      "name": "累计趋势图",
+      "family": "组成",
+      "description": "表现非递减累计量或累计贡献。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-08-area-stacked.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "donut",
+      "name": "环形图",
+      "family": "组成",
+      "description": "显示少量类别占整体的比例。",
+      "markdownImages": [
+        2,
+        3
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "contour",
+      "name": "填色等值线图",
+      "family": "空间",
+      "description": "用等值线与色带表达二维连续场。",
+      "markdownImages": [
+        1
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "surface",
+      "name": "三维曲面图",
+      "family": "空间",
+      "description": "以高度和颜色表达二维位置上的数值。",
+      "markdownImages": [
+        9,
+        14,
+        17,
+        19
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "joint",
+      "name": "散点与边际直方图",
+      "family": "关系",
+      "description": "联合分布和各变量的一维边际分布。",
+      "markdownImages": [
+        13,
+        29,
+        30,
+        32,
+        33,
+        41,
+        44
+      ],
+      "natureReferences": [
+        "references/template-catalog.md#marginal"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "density2d",
+      "name": "二维密度着色散点图",
+      "family": "关系",
+      "description": "用颜色表达点云局部密度。",
+      "markdownImages": [
+        40,
+        43
+      ],
+      "natureReferences": [],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown"
+      ]
+    },
+    {
+      "id": "image-channel",
+      "name": "单通道图像面板",
+      "family": "成像",
+      "description": "模拟荧光单通道示意；不是显微实验图。",
+      "markdownImages": [
+        11,
+        22,
+        23,
+        36
+      ],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-09-image-plates.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "markdown",
+        "nature"
+      ]
+    },
+    {
+      "id": "image-merge",
+      "name": "多通道合并面板",
+      "family": "成像",
+      "description": "模拟多通道叠加示意，不作为实验图像。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-09-image-plates.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "image-crop",
+      "name": "图像局部放大面板",
+      "family": "成像",
+      "description": "用裁剪框定位局部区域，示意图无真实标尺。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-09-image-plates.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "bubble-matrix",
+      "name": "气泡矩阵 / 标记点图",
+      "family": "矩阵",
+      "description": "行列类别、点面积与颜色联合编码。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-10-network-matrix.png",
+        "references/template-catalog.md#dotplot"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "adjacency",
+      "name": "邻接矩阵热图",
+      "family": "矩阵",
+      "description": "以矩阵表达节点间的连接关系。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-10-network-matrix.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "network",
+      "name": "节点连线网络图",
+      "family": "网络",
+      "description": "节点与边表达关系结构。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-10-network-matrix.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "bipartite",
+      "name": "二部关系图",
+      "family": "网络",
+      "description": "两组节点之间的连接。",
+      "markdownImages": [],
+      "natureReferences": [
+        "assets/chart-atlas/atlas-10-network-matrix.png"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "roc",
+      "name": "ROC 曲线",
+      "family": "评价",
+      "description": "真阳性率对假阳性率，示意不表示模型性能。",
+      "markdownImages": [],
+      "natureReferences": [
+        "references/template-catalog.md#roc"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "sphere-concept",
+      "name": "球体概念示意图",
+      "family": "概念",
+      "description": "用带明暗的圆盘示意球体，不是数据图。",
+      "markdownImages": [],
+      "natureReferences": [
+        "references/chart-types.md#3d-sphere-conceptual-illustration"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    },
+    {
+      "id": "manifold",
+      "name": "概率与流形概念图",
+      "family": "概念",
+      "description": "概念性概率曲线及嵌入流形示意。",
+      "markdownImages": [],
+      "natureReferences": [
+        "references/chart-types.md#probability-manifold-concept-panel"
+      ],
+      "collection": "Personal",
+      "illustrative": true,
+      "sources": [
+        "nature"
+      ]
+    }
+  ],
+  "sourceImages": [
+    {
+      "index": 1,
+      "name": "image-20261016204611780.png",
+      "sha256": "02ff50df0fdff8c2759b4cbceccdd5cfeeb22e36e7f883bef77bf6e12aa554e1"
+    },
+    {
+      "index": 2,
+      "name": "image-20261016204731062.png",
+      "sha256": "fdee3fe7b947e431972e216c48a192aaab55f6147ebe8a5c3a9838c5b4cac330"
+    },
+    {
+      "index": 3,
+      "name": "image-20261016204741209.png",
+      "sha256": "0886f22f7e232bd68b74709f85d652319155b5423503e8d93c5364326b7ff13c"
+    },
+    {
+      "index": 4,
+      "name": "image-20261016204823803.png",
+      "sha256": "e340d2f15c89f1b87b88bc0abeb37cc7b713e82b08e08d8c93755099446786d1"
+    },
+    {
+      "index": 5,
+      "name": "image-20261016204838072.png",
+      "sha256": "84d32d871a9db8533d9f39cb3618763a0a8ca24e820c60203eb9ae27d5e5f97c"
+    },
+    {
+      "index": 6,
+      "name": "image-20261016204847579.png",
+      "sha256": "086e85a3258a1d7a7f665eed4399ddfbd40976dc44549faf9da0d841066d7c2f"
+    },
+    {
+      "index": 7,
+      "name": "image-20261016204915088.png",
+      "sha256": "108bab1764345b137e8a8fee7dac1aca2b6b70f4946473028e2a9933ebe04e0f"
+    },
+    {
+      "index": 8,
+      "name": "image-20261016204939336.png",
+      "sha256": "3687b7c3c2ce20d0dcb660bd8b880e32ac9ba63e8a84c1c6fe27c41a46ebd280"
+    },
+    {
+      "index": 9,
+      "name": "image-20261016204953109.png",
+      "sha256": "c74ceea1f721a6a0ee027c900247c361df39399be6acb8f274c25b8e465e44e4"
+    },
+    {
+      "index": 10,
+      "name": "image-20261016205112309.png",
+      "sha256": "35b37c7ee24d05837f870673677762e48d47856677420f447c374449c5d1add8"
+    },
+    {
+      "index": 11,
+      "name": "image-20261016205142768.png",
+      "sha256": "3ef25e6c9cd37ab76d7bb1e911a73bfd593453e01db7ab09111f0b42452071a7"
+    },
+    {
+      "index": 12,
+      "name": "image-20261016205126497.png",
+      "sha256": "15ac921a12a2fd9fca457f7884abf8bb960db175b93ecb06d2c57e670491dc34"
+    },
+    {
+      "index": 13,
+      "name": "image-20261016205148860.png",
+      "sha256": "21a7d5676ab891d6f79d840454555f6f2fd42f0383429d9fd15c20fa264cc573"
+    },
+    {
+      "index": 14,
+      "name": "image-20261016205009415.png",
+      "sha256": "64bb042ccd4c6d5d4a17017d48101e1c62612c54791d8cfa7f853fca26bd2be9"
+    },
+    {
+      "index": 15,
+      "name": "image-20261016205017207.png",
+      "sha256": "bda1ead442fdcc8984c39887068980309dea0ad5fcec281001f636f5b5d616eb"
+    },
+    {
+      "index": 16,
+      "name": "image-20261016205025853.png",
+      "sha256": "0c321ea5f510aaec5a8252051f5a78b6cf185388e330885ee703aa01f495d9ea"
+    },
+    {
+      "index": 17,
+      "name": "image-20261016205036503.png",
+      "sha256": "3488bc95332edf4c3f5852f4a1d3aab1780e8ac37e04227b8e7447839ee9a4fb"
+    },
+    {
+      "index": 18,
+      "name": "image-20261016205041176.png",
+      "sha256": "7b62161dd4e3029b463201f80dd981c9c251ab91f31898da9dedeca577d73d6d"
+    },
+    {
+      "index": 19,
+      "name": "image-20261016205050447.png",
+      "sha256": "0e9b1b49ea5c4ebc1219ceb9bc2f78aa9d6ce044c33be89510f4f46db448fee9"
+    },
+    {
+      "index": 20,
+      "name": "image-20261016205055592.png",
+      "sha256": "7b110d500cd2d58b18b5f47db9815c589230a8a8c642d00eca26182eae20687d"
+    },
+    {
+      "index": 21,
+      "name": "image-20261016205328468.png",
+      "sha256": "1c5d8326c19d1b512817116b3c7d3a43dd3a28aa3bee9a8bd9a2d40d6789e9e7"
+    },
+    {
+      "index": 22,
+      "name": "image-20261016205208792.png",
+      "sha256": "6e35f398c1c8628b51d6744b63453f7d1564426303c9a7a7b4de52f83bb6e3d0"
+    },
+    {
+      "index": 23,
+      "name": "image-20261016205217945.png",
+      "sha256": "3dece89469db93a295e77e63041018bd99ce43d4cec355653a912822ea3b4f35"
+    },
+    {
+      "index": 24,
+      "name": "image-20261016205231598.png",
+      "sha256": "8d546d1ae0e8c2d66690d83158389f8e11e0295faafa0d4545ed63577906713b"
+    },
+    {
+      "index": 25,
+      "name": "image-20261016205237638.png",
+      "sha256": "bbe56ff33ad1a9b05e4487864dfba2f9d1bcdc8272eda0935e32a729e17fc8c3"
+    },
+    {
+      "index": 26,
+      "name": "image-20261016205242810.png",
+      "sha256": "9df57a02efb4f0c9b6f54e719236e1e946902058fbff438764dcf6bde6749eed"
+    },
+    {
+      "index": 27,
+      "name": "image-20261016205248685.png",
+      "sha256": "e1772f2c85e1753970b4c3b66247f534b6522d29d61c323c0258bef8883b918a"
+    },
+    {
+      "index": 28,
+      "name": "image-20261016205255223.png",
+      "sha256": "9f7ac260ef72c521900190b52f1fe1e885d37cf089792a9dcee82f9d9bfd2d6b"
+    },
+    {
+      "index": 29,
+      "name": "image-20261016205302226.png",
+      "sha256": "df7f9055d3356a858596d44ffb1dbcec79353ba176a763be07d9815597987608"
+    },
+    {
+      "index": 30,
+      "name": "image-20261016205306447.png",
+      "sha256": "88d18b68a95b82ad613fdd8693a2f5f63a196f775ff891d4e274fe8c97217549"
+    },
+    {
+      "index": 31,
+      "name": "image-20261016205310387.png",
+      "sha256": "2a8dc77090bf219ffa41ff06378312061de7e1d740ec99337663f8ef4fa76f1d"
+    },
+    {
+      "index": 32,
+      "name": "image-20261016205317012.png",
+      "sha256": "0c57a30e686aa5c92a7d10d8666851d46138f2a580402154af9d67b020e802db"
+    },
+    {
+      "index": 33,
+      "name": "image-20261016205322203.png",
+      "sha256": "ffc17e3bef8749cdeea075e1b3de08fb764048505054ecf093c2ec83f6a27fd3"
+    },
+    {
+      "index": 34,
+      "name": "image-20261016205343633.png",
+      "sha256": "2a0ddb702c4149e5b7454839b6f11b9b65d323208d547ee7ed5494d24b6faf53"
+    },
+    {
+      "index": 35,
+      "name": "image-20261016205349157.png",
+      "sha256": "405fac061d0677637a6bd33bceb5cf9bbb0d3a9c5bc31a0679bbb1fccf3cae67"
+    },
+    {
+      "index": 36,
+      "name": "image-20261016205405425.png",
+      "sha256": "f91d98bd3bc4a8729667e6aca914c46529dca2a86ad33793e8161e06a4fe9585"
+    },
+    {
+      "index": 37,
+      "name": "image-20261016205412229.png",
+      "sha256": "fcf6616e74273063a673078542f38cdfff625351f7243309a819791f5cc04a19"
+    },
+    {
+      "index": 38,
+      "name": "image-20261016205418838.png",
+      "sha256": "533c21595fa765ce028f502e8c1a10c09ae09f133b2ad2e9134f43abd2fd0b34"
+    },
+    {
+      "index": 39,
+      "name": "image-20261016205438106.png",
+      "sha256": "de44d9a0fcb5ecf24fb124098d222cc6b42c14507994984dc0cfefcc755bcb4c"
+    },
+    {
+      "index": 40,
+      "name": "image-20261016205444565.png",
+      "sha256": "55da1251b35e7d1897fc3a6902b631b836773714c5b31b45e4d37168243850e3"
+    },
+    {
+      "index": 41,
+      "name": "image-20261016205452141.png",
+      "sha256": "a456fc0605dbcaec2a4ed523176d2069159540abfbd2cd65d0afa3cdd55d179d"
+    },
+    {
+      "index": 42,
+      "name": "image-20261016205458232.png",
+      "sha256": "9721f550343c1d3b6814dcfee1f449d5796047f14e9d248cfe4a67d6901c8dfb"
+    },
+    {
+      "index": 43,
+      "name": "image-20261016205507683.png",
+      "sha256": "93c037b96ff3748d950b959aa1c631ebd28d85cac0f1949fdf7690867ad0b73a"
+    },
+    {
+      "index": 44,
+      "name": "image-20261016205514079.png",
+      "sha256": "ff9d65ab5c3117b7efd0c73a0ba7a3b13368f0e812e7c8e3667a672ffd670ab0"
+    }
+  ],
+  "notice": "缩略图由插件以演示数据原创绘制；不是论文结果，不是从资料复制的实验图。"
+};});

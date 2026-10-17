@@ -1,0 +1,12 @@
+.vscode/**
+src/**
+tools/**
+tsconfig.json
+package-lock.json
+**/*.map
+.gitignore
+preview.jpg
+*.vsix
+sources/**
+preview-*.jpg
+MARKETPLACE-RELEASE.json
