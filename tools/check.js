@@ -67,11 +67,11 @@ pass('前端脚本语法、DOM 引用、CSP 与本地处理约束');
   let messageHandler, selected = '', openImage, savedBytes;
   const extensionRoot = path.join(__dirname, '..');
   const vscode = {
-    ViewColumn: { Beside: 2 }, Uri: { joinPath: (root, ...parts) => ({ fsPath: path.join(root.fsPath, ...parts), path: path.join(root.fsPath, ...parts) }) },
+    StatusBarAlignment: { Right: 2 }, ViewColumn: { Beside: 2 }, Uri: { joinPath: (root, ...parts) => ({ fsPath: path.join(root.fsPath, ...parts), path: path.join(root.fsPath, ...parts) }) },
     commands: { registerCommand: (name, fn) => { commands.set(name, fn); return { dispose() {} }; } },
     env: { clipboard: { writeText: async text => clipboard.push(text) } },
     workspace: { fs: { stat: async () => ({ size: 20 }), readFile: async () => Buffer.from('image'), writeFile: async (_uri, bytes) => { savedBytes = bytes; } } },
-    window: { activeTextEditor: { selection: {}, document: { getText: () => selected } },
+    window: { createStatusBarItem: () => ({ show() {}, dispose() {} }), activeTextEditor: { selection: {}, document: { getText: () => selected } },
       showInformationMessage: async text => notices.push(text), showErrorMessage: async text => notices.push(text),
       showOpenDialog: async () => openImage,
       showSaveDialog: async () => ({ path: '/tmp/mock-output.png' }),

@@ -6,6 +6,13 @@ import { randomBytes } from 'crypto';
 const MAX_IMAGE_BYTES = 15 * 1024 * 1024;
 
 export function activate(context: vscode.ExtensionContext): void {
+  const shortcut = vscode.window.createStatusBarItem('scientificColorDeck.quickOpen', vscode.StatusBarAlignment.Right, 80);
+  shortcut.name = '科研绘图';
+  shortcut.text = '$(symbol-color) 科研绘图';
+  shortcut.tooltip = '打开科研色卡：查颜色、比颜色、科研配色与图表图鉴';
+  shortcut.command = 'scientificColorDeck.open';
+  shortcut.show();
+  context.subscriptions.push(shortcut);
   let panel: vscode.WebviewPanel | undefined;
   let ready = false;
   let pendingSelection: string | undefined;

@@ -2,7 +2,7 @@
   "name": "scientific-color-deck",
   "displayName": "Scientific Color Deck",
   "description": "科研绘图色卡：颜色查询、图片取色、配色代码导出及色觉缺陷模拟。",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "publisher": "YuHaoran251",
   "license": "MIT",
   "engines": {
@@ -21,7 +21,8 @@
   ],
   "main": "./out/extension.js",
   "activationEvents": [
-    "onCommand:scientificColorDeck.open"
+    "onCommand:scientificColorDeck.open",
+    "onStartupFinished"
   ],
   "contributes": {
     "commands": [

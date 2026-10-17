@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.1 — 2026-10-17
+
+- Add a Scientific Plotting status bar shortcut that opens the existing color deck.
+- Activate after startup so the shortcut is available before opening the command palette; the item can be hidden from the native status bar menu.
+
+
 ## 0.5.0 — 2026-10-17
 
 - Add a separately attributed Origin catalog: 20 categories and 217 type/variant records from the specified Graphing overview page.

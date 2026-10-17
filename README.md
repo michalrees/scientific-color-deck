@@ -1,8 +1,10 @@
 # Scientific Color Deck · 科研色卡
 
-为 VS Code 科研绘图提供颜色查询、图片取色、配色预置与色觉缺陷预览。当前版本：**0.5.0**。
+为 VS Code 科研绘图提供颜色查询、图片取色、配色预置与色觉缺陷预览。当前版本：**0.5.1**。
 
 ## 开始使用
+
+VS Code 启动后，底部状态栏会显示 **科研绘图**。点击即可打开科研色卡；右键状态栏，在菜单中勾选或取消“科研绘图”可显示/隐藏这个入口。
 
 在 VS Code 扩展商店搜索 **Scientific Color Deck**（Publisher：`YuHaoran251`），或搜索 `@id:YuHaoran251.scientific-color-deck` 安装。也支持本地 VSIX 安装。安装后在命令面板执行 **Scientific Color Deck: 打开科研色卡**。
 
