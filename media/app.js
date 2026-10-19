@@ -6,7 +6,10 @@ const ORIGIN = OriginLibrary;
 const ALL_CHARTS = L.charts.concat(ORIGIN.charts);
 let galleryPage = 0;
 const GALLERY_PAGE_SIZE = 36;
-let paletteCollection = 'Open-source';
+let paletteCollection = 'all';
+function paletteGroup(p) {
+  return p.origin === 'nature' ? 'nature-figure' : p.origin === 'matplotlib' ? 'matplotlib' : 'Author';
+}
 const vscode = acquireVsCodeApi();
 const $ = id => document.getElementById(id);
 const saved = vscode.getState() || {};
@@ -58,11 +61,9 @@ function persist() {
 document.querySelectorAll('.collection').forEach(button => button.addEventListener('click', () => {
   paletteCollection = button.dataset.collection;
   document.querySelectorAll('.collection').forEach(b => b.classList.toggle('active', b === button));
-  $('palette-origin').value = 'all';
   renderCards(document.querySelector('.filter.active')?.dataset.filter || 'all');
 }));
 $('palette-search').addEventListener('input', () => renderCards(document.querySelector('.filter.active')?.dataset.filter || 'all'));
-$('palette-origin').addEventListener('change', () => renderCards(document.querySelector('.filter.active')?.dataset.filter || 'all'));
 $('chart-search').addEventListener('input', () => {galleryPage=0;renderGallery();});
 $('chart-family').addEventListener('change', () => {galleryPage=0;renderGallery();});
 $('chart-prev').addEventListener('click',()=>{galleryPage--;renderGallery();});
@@ -71,7 +72,7 @@ $('close-chart-detail').addEventListener('click', () => $('chart-detail').close(
 $('copy-chart-index').addEventListener('click', () => copy(JSON.stringify(ALL_CHARTS.map(c => ({ name:c.name, type:c.id, family:c.family, description:c.description })), null, 2)));
 for (const family of new Set(ALL_CHARTS.map(c => c.family))) { const option=document.createElement('option'); option.value=family; option.textContent=family; $('chart-family').append(option); }
 const summary = L.summary;
-$('personal-summary').textContent = `共 ${C.palettes.length} 组配色 · 开源 62 / Personal 32 / 内置 6 · 图表图鉴 ${ALL_CHARTS.length} 条图种/变体`;
+$('personal-summary').textContent = `共 ${C.palettes.length} 组配色 · 按 Author / nature-figure / matplotlib 分组 · 图表图鉴 ${ALL_CHARTS.length} 条图种/变体`;
 $('gallery-summary').textContent = `共 ${ALL_CHARTS.length} 条图种与结构变体，按分组统一浏览。支持中英文搜索、当前配色重绘、放大和保存。`;
 
 
@@ -120,9 +121,8 @@ function swatches(container, colors, simulated = false) {
 }
 function renderCards(filter = 'all') {
   $('palette-grid').replaceChildren();
-  const origin = $('palette-origin').value;
   const term = $('palette-search').value.trim().toLowerCase();
-  const selected = C.palettes.filter(p => (paletteCollection === 'all' || p.collection === paletteCollection) && (origin === 'all' || p.origin === origin) && (filter === 'all' || p.type === filter) && (p.name + ' ' + p.colors.join(' ')).toLowerCase().includes(term));
+  const selected = C.palettes.filter(p => (paletteCollection === 'all' || paletteGroup(p) === paletteCollection) && (filter === 'all' || p.type === filter) && (p.name + ' ' + p.colors.join(' ')).toLowerCase().includes(term));
   $('palette-count').textContent = `显示 ${selected.length} / 全部 ${C.palettes.length} 组 · 当前分类：${paletteCollection === 'all' ? '全部' : paletteCollection}`;
   for (const p of selected) {
     const card = document.createElement('button'); card.className = 'palette-card'; card.classList.toggle('selected', p.id === palette.id);
@@ -131,7 +131,7 @@ function renderCards(filter = 'all') {
     const strip = document.createElement('div'); strip.className = 'card-strip';
     p.colors.forEach(code => { const chip = document.createElement('span'); chip.style.backgroundColor = code; strip.append(chip); });
     const note = document.createElement('p'); note.textContent = p.note;
-    const source = document.createElement('small'); source.className = 'palette-origin'; source.textContent = p.collection + ' · ' + (p.family || (p.origin === 'nature' ? 'nature-figure' : p.origin === 'markdown' ? '个人截图' : '内置')) + (p.approximateIndices ? ' · 含近似色号' : '');
+    const source = document.createElement('small'); source.className = 'palette-origin'; source.textContent = paletteGroup(p) + (p.approximateIndices ? ' · 含近似色号' : '');
     card.append(heading, strip, note, source); card.addEventListener('click', () => { palette = p; renderPalette(); });
     $('palette-grid').append(card);
   }

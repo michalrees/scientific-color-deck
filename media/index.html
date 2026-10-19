@@ -46,8 +46,8 @@
 <section id="palettes" class="page" hidden>
   <div class="section-heading"><h2>为数据选择颜色</h2><span>预置 + 代码</span></div>
   <div class="library-summary" id="personal-summary"></div>
-  <div class="collection-row" role="group" aria-label="配色分类"><button class="collection active" data-collection="Open-source">开源配色</button><button class="collection" data-collection="Personal">Personal</button><button class="collection" data-collection="Built-in">内置</button><button class="collection" data-collection="all">全部分类</button></div>
-  <div class="library-search"><label class="sr-only" for="palette-search">搜索配色</label><input id="palette-search" placeholder="搜索配色名称或色值…"><label for="palette-origin">来源</label><select id="palette-origin"><option value="all">全部来源</option><option value="markdown">个人截图 / Markdown</option><option value="nature">nature-figure</option><option value="colorbrewer">ColorBrewer</option><option value="d3">D3 分类色</option><option value="matplotlib">Matplotlib</option><option value="builtin">内置配色</option></select></div>
+  <div class="collection-row" role="group" aria-label="配色分组"><button class="collection active" data-collection="all">全部</button><button class="collection" data-collection="Author">Author</button><button class="collection" data-collection="nature-figure">nature-figure</button><button class="collection" data-collection="matplotlib">matplotlib</button></div>
+  <div class="library-search"><label class="sr-only" for="palette-search">搜索配色</label><input id="palette-search" placeholder="搜索配色名称或色值…"></div>
   <p id="palette-count" class="muted"></p>
   <div class="filters" role="group" aria-label="配色类型"><button class="filter active" data-filter="all">全部</button><button class="filter" data-filter="qualitative">分类 · 不同组别</button><button class="filter" data-filter="sequential">顺序 · 从低到高</button><button class="filter" data-filter="diverging">发散 · 偏离中点</button><button class="filter" data-filter="cyclic">循环 · 相位与方向</button><button class="filter" data-filter="miscellaneous">其他 · 按用途选择</button></div>
   <div id="palette-grid" class="palette-grid"></div>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.4 — 2026-10-19
+
+- Simplify palette browsing to Author, nature-figure and matplotlib groups with one shared filter.
+- Preserve all 100 palettes and their original attribution and licensing details.
+
+
 ## 0.5.3 — 2026-10-19
 
 - Organize the chart gallery exclusively by chart family, with search and pagination.
