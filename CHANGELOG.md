@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.3 — 2026-10-19
+
+- Organize the chart gallery exclusively by chart family, with search and pagination.
+- Remove source filters, source catalog buttons and source badges from cards; preserve source attribution in details and data.
+
+
 ## 0.5.2 — 2026-10-19
 
 - Merge the chart gallery’s Personal and Markdown filters into Author; retain all 60 author-catalog entries and the Origin/nature-figure filters.
