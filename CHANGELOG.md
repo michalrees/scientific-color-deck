@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.2 — 2026-10-19
+
+- Merge the chart gallery’s Personal and Markdown filters into Author; retain all 60 author-catalog entries and the Origin/nature-figure filters.
+- Rename the chart gallery shortcut, summary and screenshot-source labels consistently while retaining underlying provenance.
+
+
 ## 0.5.1 — 2026-10-17
 
 - Add a Scientific Plotting status bar shortcut that opens the existing color deck.

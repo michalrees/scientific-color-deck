@@ -28,7 +28,7 @@ function persist() {
   function renderGallery() {
   const term = $('chart-search').value.trim().toLowerCase();
   const origin = $('chart-origin').value, family = $('chart-family').value;
-  const charts = ALL_CHARTS.filter(c => (origin === 'all' || (origin === 'personal' ? !c.sources.includes('origin') : c.sources.includes(origin))) && (family === 'all' || c.family === family) && (c.name + ' ' + (c.englishName||'') + ' ' + c.family + ' ' + c.description).toLowerCase().includes(term));
+  const charts = ALL_CHARTS.filter(c => (origin === 'all' || (origin === 'author' ? !c.sources.includes('origin') : c.sources.includes(origin))) && (family === 'all' || c.family === family) && (c.name + ' ' + (c.englishName||'') + ' ' + c.family + ' ' + c.description).toLowerCase().includes(term));
   $('chart-grid').replaceChildren();
   $('chart-count').textContent = `显示 ${charts.length} / ${ALL_CHARTS.length} 条图种/变体`;
   $('chart-current-palette').textContent = '缩略图使用当前配色：' + palette.name + '（可在“科研配色”中切换）';
@@ -40,14 +40,14 @@ function persist() {
     const canvas = document.createElement('canvas'); canvas.width = 640; canvas.height = 400; canvas.setAttribute('aria-label', chart.name + '示意图');
     ChartGallery.draw(canvas, chart.id, palette.colors);
     const heading = document.createElement('h3'); heading.textContent = chart.name + (chart.englishName?' · '+chart.englishName:'');
-    const tags = document.createElement('small'); tags.textContent = chart.family + ' · ' + chart.sources.map(s => s === 'origin' ? 'Origin' : s === 'nature' ? 'nature-figure' : 'Markdown').join(' + ');
+    const tags = document.createElement('small'); tags.textContent = chart.family + ' · ' + chart.sources.map(s => s === 'origin' ? 'Origin' : s === 'nature' ? 'nature-figure' : 'Author').join(' + ');
     const description = document.createElement('p'); description.textContent = chart.description;
     card.append(canvas, heading, tags, description);
     card.addEventListener('click', () => {
       $('chart-detail-title').textContent = chart.name;
       ChartGallery.draw($('chart-detail-canvas'), chart.id, palette.colors);
       $('chart-detail-description').textContent = chart.description + (chart.dataHint?' '+chart.dataHint:'');
-      $('chart-detail-source').textContent = (chart.source?'Origin 来源：'+chart.source+'。 ':'') + (chart.markdownImages.length ? 'Markdown 截图编号：' + chart.markdownImages.join(', ') + '。 ' : '') + (chart.natureReferences.length ? 'nature-figure：' + chart.natureReferences.join('；') : '');
+      $('chart-detail-source').textContent = (chart.source?'Origin 来源：'+chart.source+'。 ':'') + (chart.markdownImages.length ? 'Author 参考截图编号：' + chart.markdownImages.join(', ') + '。 ' : '') + (chart.natureReferences.length ? 'nature-figure：' + chart.natureReferences.join('；') : '');
       $('copy-chart-source').disabled=!chart.source; $('copy-chart-source').onclick=()=>copy(chart.source);
       $('save-chart-preview').onclick=()=>vscode.postMessage({type:'saveImage',data:$('chart-detail-canvas').toDataURL('image/png')});
       $('chart-detail').showModal();
@@ -69,13 +69,13 @@ $('chart-family').addEventListener('change', () => {galleryPage=0;renderGallery(
 $('chart-prev').addEventListener('click',()=>{galleryPage--;renderGallery();});
 $('chart-next').addEventListener('click',()=>{galleryPage++;renderGallery();});
 $('origin-catalog').addEventListener('click',()=>{$('chart-origin').value='origin';$('chart-family').value='all';$('chart-search').value='';galleryPage=0;renderGallery();});
-$('personal-catalog').addEventListener('click',()=>{$('chart-origin').value='personal';$('chart-family').value='all';$('chart-search').value='';galleryPage=0;renderGallery();});
+$('author-catalog').addEventListener('click',()=>{$('chart-origin').value='author';$('chart-family').value='all';$('chart-search').value='';galleryPage=0;renderGallery();});
 $('close-chart-detail').addEventListener('click', () => $('chart-detail').close());
 $('copy-chart-index').addEventListener('click', () => copy(JSON.stringify(ALL_CHARTS.map(c => ({ name:c.name, type:c.id, family:c.family, sources:c.sources, description:c.description })), null, 2)));
 for (const family of new Set(ALL_CHARTS.map(c => c.family))) { const option=document.createElement('option'); option.value=family; option.textContent=family; $('chart-family').append(option); }
 const summary = L.summary;
-$('personal-summary').textContent = `共 ${C.palettes.length} 组配色 · 开源 62 / Personal 32 / 内置 6 · Personal ${summary.combinedChartKinds} 类 + Origin ${ORIGIN.charts.length} 条图种/变体`;
-$('gallery-summary').textContent = `Personal 保留 ${L.charts.length} 类；Origin 主页面 ${ORIGIN.sections.length} 个分类、${ORIGIN.charts.length} 条图种/结构变体。跨来源可能重复，不合算为唯一图种数。所有缩略图为原创合成示意，支持当前配色重绘、放大和保存。`;
+$('personal-summary').textContent = `共 ${C.palettes.length} 组配色 · 开源 62 / Personal 32 / 内置 6 · Author ${summary.combinedChartKinds} 类 + Origin ${ORIGIN.charts.length} 条图种/变体`;
+$('gallery-summary').textContent = `Author 保留 ${L.charts.length} 类；Origin 主页面 ${ORIGIN.sections.length} 个分类、${ORIGIN.charts.length} 条图种/结构变体。跨来源可能重复，不合算为唯一图种数。所有缩略图为原创合成示意，支持当前配色重绘、放大和保存。`;
 
 
 function tab(name) {
