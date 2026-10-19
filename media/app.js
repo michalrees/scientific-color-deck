@@ -72,7 +72,6 @@ $('close-chart-detail').addEventListener('click', () => $('chart-detail').close(
 $('copy-chart-index').addEventListener('click', () => copy(JSON.stringify(ALL_CHARTS.map(c => ({ name:c.name, type:c.id, family:c.family, description:c.description })), null, 2)));
 for (const family of new Set(ALL_CHARTS.map(c => c.family))) { const option=document.createElement('option'); option.value=family; option.textContent=family; $('chart-family').append(option); }
 const summary = L.summary;
-$('personal-summary').textContent = `共 ${C.palettes.length} 组配色 · 按 Author / nature-figure / matplotlib 分组 · 图表图鉴 ${ALL_CHARTS.length} 条图种/变体`;
 $('gallery-summary').textContent = `共 ${ALL_CHARTS.length} 条图种与结构变体，按分组统一浏览。支持中英文搜索、当前配色重绘、放大和保存。`;
 
 

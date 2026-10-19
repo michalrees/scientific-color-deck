@@ -2,7 +2,7 @@
   "name": "scientific-color-deck",
   "displayName": "Scientific Color Deck",
   "description": "科研绘图色卡：颜色查询、图片取色、配色代码导出及色觉缺陷模拟。",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "publisher": "YuHaoran251",
   "license": "MIT",
   "engines": {
@@ -56,5 +56,6 @@
   "homepage": "https://github.com/michalrees/scientific-color-deck#readme",
   "bugs": {
     "url": "https://github.com/michalrees/scientific-color-deck/issues"
-  }
+  },
+  "icon": "media/icon.png"
 }

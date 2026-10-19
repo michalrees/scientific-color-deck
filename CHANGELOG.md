@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.5 — 2026-10-19
+
+- Remove the palette summary banner and add a custom Scientific Color Deck extension icon.
+
+
 ## 0.5.4 — 2026-10-19
 
 - Simplify palette browsing to Author, nature-figure and matplotlib groups with one shared filter.
